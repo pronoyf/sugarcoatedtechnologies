@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Coated Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+</head>
+<body class = "specialty-materials-page" >
+    <section class="sub-header">
+        <div class="logo-container">
+        <nav>
+            <a href="About.HTML"><img src="Logo.png"></a>
+        </div>
+
+
+            <div class = "nav-links">
+                <ul>
+                    <li><a href="index.HTML">HOME</a></li>
+                    <li class = "dropdown">
+                        <a href="Products.HTML" class="dropbtn EN" id="dropdown-link">PRODUCTS <i id="dropdown-arrow" class="fas fa-caret-down"></i></a>
+                        <a href="Products.HTML" class="dropbtn FR" id="dropdown-link">MARCHÉS <i id="dropdown-arrow" class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="Wood_Coating.HTML" class="EN">Wood Coatings</a>
+                            <a href="marine_coatings.html" class="EN">Marine Coatings</a>
+                            <a href="specialty_materials.HTML" class="EN">Specialty Materials</a>
+
+
+                            <a href="Wood_Coating.HTML" class="FR" style="display: none;">Revêtements pour bois</a>
+                            <a href="marine_coatings.html" class="FR" style="display: none;">Revêtements marins</a>
+                            <a href="specialty_materials.HTML" class="FR" style="display: none;">Matériaux spécialisés</a>
+                        </div>
+                    </li>
+                    <li><a href="About.HTML" class="EN">ABOUT</a></li>
+                    <li><a href="About.HTML" class="FR">À PROPOS</a></li>
+                    <li><a href="Contact.HTML">CONTACT</a></li>
+                    <li>
+                        <button id="lang-btn" class="lang-btn" onclick="switchLanguage()">EN</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        
+
+        <h1 class="EN">Specialty Materials</h1>
+        <h1 class="FR">Matériaux spécialisés</h1>
+        </div> 
+    </section>
+
+
+    <section class = "special_products">
+        <h1 class="EN">Coming soon!</h1> 
+        <h1 class="FR">À venir!</h1>
+        <div class="hero-btn">
+            <a href="Contact.HTML" class="EN">Contact us</a>
+            <a href="Contact.HTML" class="FR">Contactez-nous</a>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <section class="footer">
+        <h4>Sugar Coated Technologies, Inc.</h4>
+        <p class="EN">Connect with us on Linkedn</p>
+        <p class="FR">Connectez-vous avec nous sur Linkedn</p>
+        <div class="Icons">
+            <a href="https://www.linkedin.com/company/sugar-coated-technologies/about/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="Copyright">
+            <p>&copy; 2023 Sugar Coated Technologies</p>
+        </div>
+
+        <div class="Address EN">
+            <h5>Address</h5>
+            <p1>455 Bd de la Gappe Unit 201</p1>
+        </div>
+
+        <div class="Address FR">
+            <h5>L'addresse</h5>
+            <p1>455 Bd de la Gappe Unit 201</p1>
+        </div>
+        
+        
+    </section>
+
+    <script>
+        window.onload = function() {
+    var dropdownLinks = document.querySelectorAll('.dropdown');
+
+    dropdownLinks.forEach(function(link) {
+        link.addEventListener('mouseenter', function() {
+            var dropdownContent = this.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.style.display = 'block';
+            }
+        });
+
+        link.addEventListener('mouseleave', function() {
+            var dropdownContent = this.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.style.display = 'none';
+            }
+        });
+    });
+};
+
+
+function switchLanguage() {
+    var langBtn = document.getElementById('lang-btn');
+    var elementsEnglish = document.querySelectorAll('.EN');
+    var elementsFrench = document.querySelectorAll('.FR');
+    var dropdownLinks = document.querySelectorAll('.dropdown-content');
+
+    if (langBtn.textContent === 'EN') {
+        langBtn.textContent = 'FR';
+        elementsEnglish.forEach(function(el) {
+            el.style.display = 'none';
+        });
+        elementsFrench.forEach(function(el) {
+            el.style.display = 'block';
+        });
+    } else {
+        langBtn.textContent = 'EN';
+        elementsEnglish.forEach(function(el) {
+            el.style.display = 'block';
+        });
+        elementsFrench.forEach(function(el) {
+            el.style.display = 'none';
+        });
+    }
+    
+    // Update dropdown menu items text content
+    dropdownLinks.forEach(function(link) {
+        var enItems = link.querySelectorAll('.EN');
+        var frItems = link.querySelectorAll('.FR');
+
+        if (langBtn.textContent === 'EN') {
+            enItems.forEach(function(item) {
+                item.style.display = 'block';
+            });
+            frItems.forEach(function(item) {
+                item.style.display = 'none';
+            });
+        } else {
+            enItems.forEach(function(item) {
+                item.style.display = 'none';
+            });
+            frItems.forEach(function(item) {
+                item.style.display = 'block';
+            });
+        }
+    });
+
+    // Ensure dropdowns remain hidden after language switch
+    dropdownLinks.forEach(function(link) {
+        link.style.display = 'none';
+    });
+}
+    </script>
+    
+
+
+</body>
+</html>

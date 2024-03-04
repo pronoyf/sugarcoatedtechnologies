@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Coated Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <section class="header">
+        <div class="logo-container">
+        <nav>
+            <a href="index.HTML"><img src="Logo.png"></a>
+        </div>
+
+
+            <div class = "nav-links">
+                <ul>
+                    <li><a href="index.HTML">HOME</a></li>
+                    <li class = "dropdown">
+                        <a href="Products.HTML" class="dropbtn EN" id="dropdown-link">PRODUCTS <i id="dropdown-arrow" class="fas fa-caret-down"></i></a>
+                        <a href="Products.HTML" class="dropbtn FR" id="dropdown-link">MARCHÉS <i id="dropdown-arrow" class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="Wood_Coating.HTML" class="EN">Wood Coatings</a>
+                            <a href="marine_coatings.html" class="EN">Marine Coatings</a>
+                            <a href="specialty_materials.HTML" class="EN">Specialty Materials</a>
+
+
+                            <a href="Wood_Coating.HTML" class="FR" style="display: none;">Revêtements pour bois</a>
+                            <a href="marine_coatings.html" class="FR" style="display: none;">Revêtements marins</a>
+                            <a href="specialty_materials.HTML" class="FR" style="display: none;">Matériaux spécialisés</a>
+                        </div>
+                    </li>
+                    </li>
+                    <li><a href="About.HTML" class="EN">ABOUT</a></li>
+                    <li><a href="About.HTML" class="FR">À PROPOS</a></li>
+                    <li><a href="Contact.HTML">CONTACT</a></li>
+                    <li>
+                        <button id="lang-btn" class="lang-btn" onclick="switchLanguage()">EN</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="text-box">
+        <h1 class="EN"> <span style="color:#90EE90;">Greener</span> Coating Products </h1>
+        <h1 class="FR" style="display: none;">Produits de <span style="color:#90EE90;">Revêtement</span></h1>
+        <p class="EN">Elevating Surfaces with Bio-Based Additives for Superior Finishes</p>
+        <p class="FR" style="display: none;">Revêtement comprenants des Additifs Biosourcés pour des Finitions Supérieures</p>
+        <!-- <br> is a breakline add when necessary if adding more text-->
+        
+        <!--visit us button future addition-->
+        <!---- <a href="" class="hero-btn english">Visit us to know more</a> --->
+        <!---- <a href="" class="hero-btn french">Visitez-nous pour en savoir plus</a>   ---->
+    </div>
+
+
+    </section>
+
+    <!-----Solutions------>
+
+    <section class="products">
+        <h1 class="EN">Solutions</h1>
+        <h1 class="FR" style="display: none;">Les Solutions</h1>
+
+        <div class="row">
+            <div class="product-col1">
+                <h3 class="EN">WOOD COATINGS</h3>
+                <h3 class="FR" style="display: none;">Revêtements pour bois</h3>
+            </div>
+            <div class="product-col2">
+                <h3 class="EN">MARINE COATINGS</h3>
+                <h3 class="FR" style="display: none;">Revêtements marins</h3>
+            </div>
+            <div class="product-col3">
+                <h3 class="EN">SPECIALTY MATERIALS</h3>
+                <h3 class="FR" style="display: none;">Matériaux spécialisés</h3>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!------Collection de châteaux-->
+
+    <div class="slider-container" id="sliderContainer">
+      <div class="slider-item" data-index="1">
+        <img src="Environment.png" alt="Image 1">
+        <div class = "text-container">
+        <h1 class="EN">Environment</h1>
+        <h1 class="FR" style="display: none;">Environnement</h1>
+        <p class="EN">Welcome to Sugar Coated Technologies, where innovation and excellence converge in coatings. Explore possibilities with Sugar Coated Technologies your trusted partner for superior, sustainable solutions.</p>
+        <p class="FR" style="display: none;">Bienvenue chez Sugar Coated Technologies, où l'innovation et l'excellence se conjuguent dans les revêtements. Explorez les possibilités avec Sugar Coated Technologies, votre partenaire 
+            de confiance pour des solutions durables et supérieures.</p>
+        </div>
+      </div>
+      <div class="slider-item" data-index="2">
+        <img src="Research.png" alt="Image 2">
+        <div class="text-container">
+        <h1 class="EN">Research</h1>
+        <h1 class="FR" style="display: none;">Recherche</h1>
+        <p class="EN">Done with cutting-edge research excellence. Our state-of-the-art facilities and dedicated teams push boundaries and prioritize sustainability. 
+            Explore the forefront of discovery for pioneering research shaping the future.</p>
+        <p class="FR" style="display: none;">Nos installations de pointe et nos équipes dévouées repoussent les limites et privilégient la durabilité. 
+            Explorez le devant de la scène de la découverte pour une recherche pionnière qui façonne l'avenir.</p>
+        </div>
+      </div>
+      <div class="slider-item" data-index="3">
+        <img src="Values.png" alt="Image 3">
+        <div class="text-container">
+        <h1 class="EN">Values</h1>
+        <h1 class="FR" style="display: none;">Valeurs</h1>
+        <p class="EN">Our committed teams, within advanced facilities, prioritize sustainability and ethical conduct in every endeavor.</p>
+        <p class="FR" style="display: none;">Nos équipes engagées, au sein d'installations avancées, accordent la priorité à la durabilité et à la conduite éthique dans chaque entreprise.</p>
+        </div>
+      </div>
+      <div class="slider-item" data-index="4">
+        <img src="About_SCT.jpg" alt="Image 4">
+        <div class="text-container">
+        <h1>Blank</h1>
+        <p>text</p>
+        </div>
+      </div>
+      <!-- Add more slider items as needed -->
+    </div>
+    
+    <script src="script.js"></script>
+
+    <div class="all_words">
+        <p class="word-link EN" data-index="1">Environment</p>
+        <p class="word-link EN" data-index="2">Research</p>
+        <p class="word-link EN" data-index="3">Values</p>
+
+        <p class="word-link FR" data-index="1">Environnement</p>
+        <p class="word-link FR" data-index="2">Recherche</p>
+        <p class="word-link FR" data-index="3">Valeurs</p>
+         <!--- <p class="word-link" data-index="4">Blank for now</p>     Add back when content for this is added             -->
+    </div>
+
+    
+
+
+    <section class="footer">
+        <h4>Sugar Coated Technologies, Inc.</h4>
+        <p class="EN">Connect with us on Linkedn</p>
+        <p class="FR">Connectez-vous avec nous sur Linkedn</p>
+        <div class="Icons">
+            <a href="https://www.linkedin.com/company/sugar-coated-technologies/about/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="Copyright">
+            <p>&copy; 2023 Sugar Coated Technologies</p>
+        </div>
+
+        <div class="Address EN">
+            <h5>Address</h5>
+            <p1>455 Bd de la Gappe Unit 201</p1>
+        </div>
+
+        <div class="Address FR">
+            <h5>L'addresse</h5>
+            <p1>455 Bd de la Gappe Unit 201</p1>
+        </div>
+        
+        
+    </section>
+
+    <script>
+        window.onload = function() {
+    var dropdownLinks = document.querySelectorAll('.dropdown');
+
+    dropdownLinks.forEach(function(link) {
+        link.addEventListener('mouseenter', function() {
+            var dropdownContent = this.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.style.display = 'block';
+            }
+        });
+
+        link.addEventListener('mouseleave', function() {
+            var dropdownContent = this.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.style.display = 'none';
+            }
+        });
+    });
+};
+
+
+function switchLanguage() {
+    var langBtn = document.getElementById('lang-btn');
+    var elementsEnglish = document.querySelectorAll('.EN');
+    var elementsFrench = document.querySelectorAll('.FR');
+    var dropdownLinks = document.querySelectorAll('.dropdown-content');
+
+    if (langBtn.textContent === 'EN') {
+        langBtn.textContent = 'FR';
+        elementsEnglish.forEach(function(el) {
+            el.style.display = 'none';
+        });
+        elementsFrench.forEach(function(el) {
+            el.style.display = 'block';
+        });
+    } else {
+        langBtn.textContent = 'EN';
+        elementsEnglish.forEach(function(el) {
+            el.style.display = 'block';
+        });
+        elementsFrench.forEach(function(el) {
+            el.style.display = 'none';
+        });
+    }
+    
+    // Update dropdown menu items text content
+    dropdownLinks.forEach(function(link) {
+        var enItems = link.querySelectorAll('.EN');
+        var frItems = link.querySelectorAll('.FR');
+
+        if (langBtn.textContent === 'EN') {
+            enItems.forEach(function(item) {
+                item.style.display = 'block';
+            });
+            frItems.forEach(function(item) {
+                item.style.display = 'none';
+            });
+        } else {
+            enItems.forEach(function(item) {
+                item.style.display = 'none';
+            });
+            frItems.forEach(function(item) {
+                item.style.display = 'block';
+            });
+        }
+    });
+
+    // Ensure dropdowns remain hidden after language switch
+    dropdownLinks.forEach(function(link) {
+        link.style.display = 'none';
+    });
+}
+    </script>
+
+</body>
+</html>

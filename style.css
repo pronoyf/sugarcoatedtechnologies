@@ -1,0 +1,690 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(81, 82, 89, 0.7),rgba(88, 90, 95, 0.7)),url(wood_coating2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+
+}
+
+.logo-container{
+    position: absolute;
+    top: 60px;
+    margin-right: 20px;
+
+}
+.text-box {
+    color: #fff; /* Adjust the text color for better visibility on the background */
+    
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: left;
+
+}
+nav img{
+    width: 300px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgba(255, 255, 255, 0.612);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #90EE90;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover:after{
+    width: 100%;
+
+}
+
+
+
+.text-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: black;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #777;
+    border: 1px solid #777;
+    padding: 13px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hero-btn:hover{
+    border: 1px solid #90EE90;
+    background: #90EE90;
+    transition: 1s;
+}
+
+
+@media(max-width: 700px){       /* for using website on mobile... time 26 mins */
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #90EE90;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: 0;
+    }
+
+}
+
+
+/*------- products -------*/
+.products{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-col1{
+    height: 50vh;
+    flex-basis: 31%;
+    background-image: url(wood_coating.jpg);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.product-col1 h3{
+    color: #fff;
+    text-align: left;
+    background-color: #B5651D;
+}
+
+.product-col2{
+    height: 50vh;
+    flex-basis: 31%;
+    background-image: url(liquid-coating.png);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.product-col2 h3{
+    color: #fff;
+    text-align: left;
+    background-color: #2b2623;
+}
+
+.product-col3{
+    height: 50vh;
+    flex-basis: 31%;
+    background-image: url(concrete_coating.jpg);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.product-col3 h3{
+    color: #fff;
+    text-align: left;
+    background-color: #C0C0C0;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.product-col1:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,2);
+}
+.product-col2:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,2);
+}
+.product-col3:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,2);
+}
+
+
+/* sliders for castle collection */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .slider-container {
+    margin-top: 150px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slider-item {
+    flex: 0 0 100%;
+    text-align: center;
+    display: none;
+  }
+  
+  .slider-item img {
+    width: 700px;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+    border-color: #fff;
+    border-bottom: #90EE90;
+    border-style: solid;
+    border-width: thick;
+  }
+  
+  /* Show the first slider item initially */
+  .slider-item[data-index="1"] {
+    display: block;
+  }
+
+  .text-container{
+    margin-left: 750px;
+    margin-right: 200px;
+    margin-top: 200px;
+    text-align: left;
+    
+  }
+
+  .text-container h1{
+    margin-left: 9px;
+
+  }
+
+
+  .word-link{
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: grey;
+    border-color: #fff;
+    border-top: #000;
+    border-style: solid;
+    font-size: 30px;
+  }
+
+  .word-link:hover {
+    color: #90EE90;
+    border-top: #90EE90;
+  }
+
+  .word-link.active {
+    color: #90EE90;
+    border-style: solid;
+    border-top: #90EE90;
+  }
+
+  .all_words{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+
+/* -------footer----------- */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #c9edc9;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.Address{
+    text-align: left;
+}
+
+.fa-linkedin {
+    color: #0077B5; /* LinkedIn's default blue color */
+}
+
+/* Change the color when hovering over the icon */
+.fa-linkedin:hover {
+    color: black; /* Red color */
+}
+
+
+
+/* -------Products----------- */
+
+
+/* Style the dropdown button */
+.dropbtn{
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    text-decoration: underline;
+    color: #90EE90;
+    transition: 0.5s;
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover #dropdown-arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; /* Adjust the transition duration as needed */
+}
+
+
+/* ----------Products Subpages---------    */
+
+body.wood-coating-page .sub-header{
+    min-height: 85vh;
+    width: 100%;
+    background-image: none;
+    position: relative;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(81, 82, 89, 0.7),rgba(88, 90, 95, 0.7)),url(wood_coating2.png);
+    border-style: solid;
+    border-color: #6F4E37;
+    border-width: 7px;
+    
+}
+
+
+body.wood-coating-page .sub-header h1{
+    margin-top: 150px;
+    font-size: 75px;
+    text-align: center;
+}
+
+
+body.specialty-materials-page .sub-header{
+    min-height: 85vh;
+    width: 100%;
+    background-image: none;
+    position: relative;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(81, 82, 89, 0.7),rgba(88, 90, 95, 0.7)),url(specialty_materials2.jpg);
+    border-style: solid;
+    border-color: #C0C0C0;
+    border-width: 7px;
+    
+}
+
+
+body.specialty-materials-page .sub-header h1{
+    margin-top: 150px;
+    font-size: 75px;
+    text-align: center;
+}
+
+body.liquid-coating-page .sub-header{
+    min-height: 85vh;
+    width: 100%;
+    background-image: none;
+    position: relative;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(81, 82, 89, 0.7),rgba(88, 90, 95, 0.7)),url(liquid_coating2.png);
+    border-style: solid;
+    border-color: #000;
+    border-width: 7px;
+}
+
+
+body.liquid-coating-page .sub-header h1{
+    margin-top: 150px;
+    font-size: 75px;
+    text-align: center;
+}
+
+.wood_products {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.marine_products {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.special_products {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.wood_products .hero-btn{
+    margin-top: 100px;
+}
+
+.special_products .hero-btn{
+    margin-top: 100px;
+}
+.marine_products .hero-btn{
+    margin-top: 100px;
+}
+
+
+.marine_products {
+    text-align: center;
+  }
+
+
+
+/* -------About us----------- */
+
+
+.sub-header{
+    min-height: 85vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(81, 82, 89, 0.7),rgba(88, 90, 95, 0.7)),url(about_us_background.png);
+}
+
+
+.sub-header h1{
+    margin-top: 150px;
+    font-size: 75px;
+    text-align: center;
+
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 60%;
+    padding: 30px 2px;
+    padding-right: 30px;
+}
+
+.about-col img{
+    width: 100%;
+    border-bottom: solid;
+    border-top: solid;
+    border-color: #90EE90;
+
+    
+    
+}
+.about-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+
+.about-col p{
+    padding: 15px 0 25px;
+    padding-bottom: 10px;
+}
+
+.founder {
+    text-align: center;
+}
+
+.team-title {
+    font-size: 36px; /* Set the desired font size */
+    margin-bottom: 20px;
+    color: #333; /* Set the color of the title */
+    text-align: center; /* Center the title */
+    margin-top: 100px;
+    margin-right: 70px;
+}
+
+.row2 {
+    display: inline-block;
+    margin-right: 100px; /* Adjust the value to set the desired space between images */
+    vertical-align: top; /* Align images from the top */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.row2 img {
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    border-bottom: 2px solid #90EE90; /* Add a green border at the bottom */
+}
+
+.row2:hover .hover-text {
+    opacity: 1;
+}
+ 
+
+/* ----- contact us page --------*/
+
+.sub-header1{
+    min-height: 85vh;
+    width: 100%;
+    background-color: #3e3952;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+}
+
+.sub-header1 h1{
+    margin-top: 150px;
+    font-size: 75px;
+    text-align: center;
+
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: #90EE90;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+
+/* ------ensures english is shown by default until french is clicked-------- */
+.FR{
+    display: none;
+}
+
+.lang-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 13px; /* Match the font size of nav links */
+    padding: 8px 12px; /* Match the padding of nav links */
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.612);
+    transition: color 0.5s; /* Add transition for color change */
+}
+
+.lang-btn:hover {
+    color: #90EE90; /* Change text color on hover to match the hover effect of nav links */
+}
+
+.lang-btn:focus {
+    outline: none; /* Remove the default focus outline */
+}
+
+
+
+
+
+
+
+
+

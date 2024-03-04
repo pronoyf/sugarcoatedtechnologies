@@ -1,0 +1,243 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Coated Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header1">
+        <div class="logo-container">
+        <nav>
+            <a href="About.HTML"><img src="Logo.png"></a>
+        </div>
+
+
+            <div class = "nav-links">
+                <ul>
+                    <li><a href="index.HTML">HOME</a></li>
+                    <li class = "dropdown">
+                        <a href="Products.HTML" class="dropbtn EN" id="dropdown-link">PRODUCTS <i id="dropdown-arrow" class="fas fa-caret-down"></i></a>
+                        <a href="Products.HTML" class="dropbtn FR" id="dropdown-link">MARCHÉS <i id="dropdown-arrow" class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="Wood_Coating.HTML" class="EN">Wood Coatings</a>
+                            <a href="marine_coatings.html" class="EN">Marine Coatings</a>
+                            <a href="specialty_materials.HTML" class="EN">Specialty Materials</a>
+
+
+                            <a href="Wood_Coating.HTML" class="FR" style="display: none;">Revêtements pour bois</a>
+                            <a href="marine_coatings.html" class="FR" style="display: none;">Revêtements marins</a>
+                            <a href="specialty_materials.HTML" class="FR" style="display: none;">Matériaux spécialisés</a>
+                        </div>
+                    </li>
+                    <li><a href="About.HTML" class="EN">ABOUT</a></li>
+                    <li><a href="About.HTML" class="FR">À PROPOS</a></li>
+                    <li><a href="Contact.HTML">CONTACT</a></li>
+                    <li>
+                        <button id="lang-btn" class="lang-btn" onclick="switchLanguage()">EN</button>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+        <h1 class="EN">Contact us</h1>
+        <h1 class="FR">Contactez-nous</h1>
+    </section>
+
+
+   <!-------Contact us-->
+
+   <section class="location">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.5473943886677!2d-75.70224552423937!3d45.47892063245713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1b42241b692d%3A0x1cd6a731f14d0bf1!2s455%20Bd%20de%20la%20Gappe%20Unit%20201%2C%20Gatineau%2C%20QC%20J8T%200G1!5e0!3m2!1sen!2sca!4v1703370112281!5m2!1sen!2sca" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   </section>
+
+   <section class="contact us" >
+    <div class="row">
+        <div class ="contact-col EN">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>455 Bd de la Gappe Unit 201</h5>
+                    <p>Ontario, Gatineau, CA</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 111111111</h5>
+                    <p>Monday-Friday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@sugarcoatedtech.com</h5>
+                    <p>Email us your inquiry</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col FR" style="display: none;">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>455 Bd de la Gappe Unit 201</h5>
+                    <p>Ontario, Gatineau, CA</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 111111111</h5>
+                    <p>Lundi-Vendredi, 10h à 18h</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@sugarcoatedtech.com</h5>
+                    <p>Envoyez-nous votre demande par email</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col EN">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message"></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-col FR" style="display: none;">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Entrez votre nom" required>
+                <input type="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+                <input type="text" name="subject" placeholder="Entrez votre sujet" required>
+                <textarea rows="8" name="message" placeholder="Message"></textarea>
+                <button type="submit" class="hero-btn red-btn">Envoyer le message</button>
+            </form>
+        </div>
+    </div>
+
+    </section>
+
+
+    <section class="footer">
+        <h4>Sugar Coated Technologies, Inc.</h4>
+        <p class="EN">Connect with us on Linkedn</p>
+        <p class="FR">Connectez-vous avec nous sur Linkedn</p>
+        <div class="Icons">
+            <a href="https://www.linkedin.com/company/sugar-coated-technologies/about/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="Copyright">
+            <p>&copy; 2023 Sugar Coated Technologies</p>
+        </div>
+
+        <div class="Address EN">
+            <h5>Address</h5>
+            <p1>455 Bd de la Gappe Unit 201</p1>
+        </div>
+
+        <div class="Address FR">
+            <h5>L'addresse</h5>
+            <p1>455 Bd de la Gappe Unit 201</p1>
+        </div>
+        
+        
+    </section>
+
+    <script>
+        window.onload = function() {
+    var dropdownLinks = document.querySelectorAll('.dropdown');
+
+    dropdownLinks.forEach(function(link) {
+        link.addEventListener('mouseenter', function() {
+            var dropdownContent = this.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.style.display = 'block';
+            }
+        });
+
+        link.addEventListener('mouseleave', function() {
+            var dropdownContent = this.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.style.display = 'none';
+            }
+        });
+    });
+};
+
+
+function switchLanguage() {
+    var langBtn = document.getElementById('lang-btn');
+    var elementsEnglish = document.querySelectorAll('.EN');
+    var elementsFrench = document.querySelectorAll('.FR');
+    var dropdownLinks = document.querySelectorAll('.dropdown-content');
+
+    if (langBtn.textContent === 'EN') {
+        langBtn.textContent = 'FR';
+        elementsEnglish.forEach(function(el) {
+            el.style.display = 'none';
+        });
+        elementsFrench.forEach(function(el) {
+            el.style.display = 'block';
+        });
+    } else {
+        langBtn.textContent = 'EN';
+        elementsEnglish.forEach(function(el) {
+            el.style.display = 'block';
+        });
+        elementsFrench.forEach(function(el) {
+            el.style.display = 'none';
+        });
+    }
+    
+    // Update dropdown menu items text content
+    dropdownLinks.forEach(function(link) {
+        var enItems = link.querySelectorAll('.EN');
+        var frItems = link.querySelectorAll('.FR');
+
+        if (langBtn.textContent === 'EN') {
+            enItems.forEach(function(item) {
+                item.style.display = 'block';
+            });
+            frItems.forEach(function(item) {
+                item.style.display = 'none';
+            });
+        } else {
+            enItems.forEach(function(item) {
+                item.style.display = 'none';
+            });
+            frItems.forEach(function(item) {
+                item.style.display = 'block';
+            });
+        }
+    });
+
+    // Ensure dropdowns remain hidden after language switch
+    dropdownLinks.forEach(function(link) {
+        link.style.display = 'none';
+    });
+}
+    </script>
+
+
+    
+
+    
+</body>
+</html>
+    
+
+    
